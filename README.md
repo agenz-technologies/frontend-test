@@ -13,4 +13,6 @@ npm run dev
 
 Open [http://localhost:3000/test1](http://localhost:3000/test2) with your browser to see the result.
 
-# frontend-test
+## LICENSE
+
+This repository is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. See the LICENSE file for details.
