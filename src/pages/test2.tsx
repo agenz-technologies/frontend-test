@@ -10,7 +10,7 @@ function HiringTest2(props: { clickId: string }) {
       <h1>
         In the production environnement, this page is accessible to all
         visitors. Its a static page and all visitors are served with the same
-        content
+        content. This page is visited 100K Times per day
       </h1>
       <h2>
         The click id will be used to track users interaction with the page
