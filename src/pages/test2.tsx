@@ -2,7 +2,9 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 function HiringTest2(props: { clickId: string }) {
   const [clickId, setClickId] = useState<string | null>(null);
+  const [disabled, setDisabled] = useState<boolean>(false);
   const handleClick = () => {
+    setDisabled(true);
     setClickId(props?.clickId);
   };
   return (
@@ -16,10 +18,13 @@ function HiringTest2(props: { clickId: string }) {
         The click id will be used to track users interaction with the page
         during the visit
       </h2>
-      <button type="button" onClick={handleClick}>
+      <div>Placeholder for static content</div>
+      <button type="button" disabled={disabled} onClick={handleClick}>
         Click Me !
       </button>
+
       {clickId ? <p> Your click Id is : {clickId}</p> : null}
+      <div>Placeholder for more static content</div>
     </>
   );
 }
